@@ -1,6 +1,7 @@
 html {
     text-align: center;
     margin: 0 auto;
+    background-color: lightgray;
 }
 
 
@@ -22,14 +23,30 @@ h1 {
     grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
     grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
     background-color: white;
-    border-style: solid;
     height: 100%;
 }
 
 .box {
+    display: flex;
     background-color: black;
+    justify-content: center;
+    align-content: center;
 }
 
 .box:hover {
+    background-color: gray;
+}
+
+
+.fruit {
+    background-color: green;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+
+}
+
+
+#box55 {
     background-color: gray;
 }
