@@ -4,6 +4,11 @@ html {
 }
 
 
+h1 {
+    font-size: 5em;
+}
+
+
 .container {
     margin: 0 auto;
     width: 1000px;
@@ -13,8 +18,9 @@ html {
 
 .gameboard {
     display: grid;
-    grid-template-rows: 200px 200px 200px 200px 200px;
-    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-gap: 1px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
     background-color: white;
     border-style: solid;
     height: 100%;
@@ -24,4 +30,6 @@ html {
     background-color: black;
 }
 
-
+.box:hover {
+    background-color: gray;
+}
