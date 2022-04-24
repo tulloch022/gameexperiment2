@@ -1,3 +1,5 @@
+//User input
+
 window.addEventListener("keydown", function (event) {
   if (event.defaultPrevented) {
     return;
@@ -28,21 +30,22 @@ window.addEventListener("keydown", function (event) {
 
 
 
-//The Snake
-
-
-let currentBox = [5,6];
-
-
-const snake = [document.querySelector("#box55")];
-
-
 const moveRight = () => {
+    let currentBox = [1,1];
     if (currentBox[1] < 10) {
-        currentBox[1] +=1;
-    }
-    snake.push()
-    console.log(currentBox)
+        currentBox[1] += 1;
+        console.log(currentBox);
+        if (currentBox = [1,1]) {
+            let box = document.querySelector('#box1');
+            box.style.backgroundColor = 'white';
+        } else if (currentBox = [1,2]) {
+            let box = document.querySelector('#box2');
+            box.style.backgroundColor = 'white';
+        } else if (currentBox = [1,3]) {
+            let box = document.querySelector('#box3');
+                box.style.backgroundColor = 'white';
+            }
+        }
 }
 
 const moveLeft = () => {
@@ -50,7 +53,6 @@ const moveLeft = () => {
         currentBox[1] -=1;
         console.log(currentBox);
     }
-    snake.push(document.querySelector("#box56"));
 }
 
 const moveUp = () => {
@@ -66,3 +68,13 @@ const moveDown = () => {
         console.log(currentBox);
     }
 }
+
+
+
+
+
+
+//The Snake
+
+
+
